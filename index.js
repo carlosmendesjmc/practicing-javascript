@@ -308,7 +308,34 @@ console.log(book3)
 
 //Objetos Built in
 
-// ... esses 3 pontos são chamados --> spread operator
+// ... esses 3 pontos são chamados --> spread operator 
 
 const array = [1, 4, 6, 2, 9, 10, 22];
 console.log(Math.max(...array));
+
+
+
+//String - usado pra manipular caracteres
+
+let message = 'Hey, my name is Carlos.'
+console.log(message.startsWith('Hey'))
+
+//Template Literals
+
+const email = 'Hi joe, \nThe meeting is confirmed! \nCarlos'
+console.log(email)
+
+const email2 = `Hi José, 
+the meeting is confirmed!
+Carlos`
+
+console.log(email2)
+
+let firstName1 = 'Joe'
+const email4 = 'Hi' + firstName1 +', \nThe meeting is confirmed! \nCarlos'
+
+const email5 = `Hi ${firstName1}, 
+the meeting is confirmed!
+Carlos`
+console.log(email4)
+console.log(email5)
