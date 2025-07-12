@@ -293,3 +293,15 @@ const book1 = createBook ('Atomic', 'James', 360)
 book1.color ='White'
 const book2 = createBook ('Think', 'Napolean', 450)
 console.log(book1, book2)
+
+// Criando um Constructor
+// contrutor de objetos ele utiliza menos linha de codigo
+
+function createBookConstructor(title, author, page){
+  this.bookTitle = title;
+  this.bookAuthor = author;
+  this.bookPages = page
+}
+
+const book3 = new createBookConstructor('Atomic', 'James', '600')
+console.log(book3)
