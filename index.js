@@ -243,3 +243,32 @@ while (i <= 10){
   i++
 }
 
+//Criando um um objeto, neste exemplo abaixo temos dois objetos criados 
+//bookCriandoObjeto e bookCriandoObjeto1
+const bookCriandoObjeto = {
+  booktitle: 'Atomic Habits',
+  bookAuthor: 'James Clear',
+  bookPages: '306',
+  bookchapters: {
+    chap1: 'Fundamentals',
+    chap2: '1st Law'
+  },
+  printBook: function() {
+    console.log('Printing...')
+  }
+}
+bookCriandoObjeto.printBook()
+
+const bookCriandoObjeto1 = {
+  booktitle: 'Think and grow rich',
+  bookAuthor: 'Napolean',
+  bookPages: '306',
+  bookchapters: {
+    chap1: 'Fundamentals',
+    chap2: '1st Law'
+  },
+  printBook: function() {
+    console.log('Printing...')
+  }
+}
+bookCriandoObjeto1.printBook()
