@@ -305,3 +305,10 @@ function createBookConstructor(title, author, page){
 
 const book3 = new createBookConstructor('Atomic', 'James', '600')
 console.log(book3)
+
+//Objetos Built in
+
+// ... esses 3 pontos são chamados --> spread operator
+
+const array = [1, 4, 6, 2, 9, 10, 22];
+console.log(Math.max(...array));
