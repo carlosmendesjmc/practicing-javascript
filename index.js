@@ -272,3 +272,24 @@ const bookCriandoObjeto1 = {
   }
 }
 bookCriandoObjeto1.printBook()
+
+//nos dois exemplos acima criamos dois objetos book pra representar dois Autores diferentes
+//neste proximo exemplo abaixo de factory, constroi uma fabrica com as propriedades e depois voce so tera que passar as informações de cada produto book
+//Criando uma Factory = seria o mesmo que um grupo de objetos (ex- uma fabrica)
+
+
+function createBook(title, author, pages){
+  const book = {
+      bookTitle: title,
+      bookAuthor: author,
+      bookPages: pages,
+      printBook: function() {
+        console.log('Printing...')
+      }
+  }
+  return book
+}
+const book1 = createBook ('Atomic', 'James', 360)
+book1.color ='White'
+const book2 = createBook ('Think', 'Napolean', 450)
+console.log(book1, book2)
